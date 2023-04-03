@@ -6,10 +6,10 @@
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
-    "clean": "rm -rf build", 
+    "clean": "rm -rf build",
     "build": "npm run clean && parcel build",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build" 
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
@@ -25,7 +25,8 @@
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.2",
     "parcel": "^2.8.2",
-    "prettier": "^2.8.1"
+    "prettier": "^2.8.1",
+    "rimraf": "^4.4.1"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.6",
