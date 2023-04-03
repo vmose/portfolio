@@ -12,13 +12,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cobiwave/simplefolio"
+    "url": "git+https://github.com/vmose/portfolio"
   },
   "keywords": [],
-  "author": "Jacobo Martinez",
+  "author": "Victor Mose",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cobiwave/simplefolio/issues"
+    "url": "https://github.com/vmose/portfolio/issues"
   },
   "homepage": "https://vmose.github.io/portfolio",
   "devDependencies": {
