@@ -6,10 +6,10 @@
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
 
     <title>Victor Mose — Analytics Engineer</title>
-    <meta name="keywords" content="Victor Mose, Analytics Engineer, Data Engineer, Data Science, Machine Learning" />
+    <meta name="keywords" content="Victor Mose, Analytics Engineer, dbt, SQL, Data Modeling, Semantic Layer" />
     <meta
       name="description"
-      content="Victor Mose is an Analytics Engineer building data pipelines, models, and dashboards that turn raw data into decisions."
+      content="Victor Mose is an Analytics Engineer who models raw warehouse data into tested, documented, self-serve metrics."
     />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -50,20 +50,21 @@
         <div>
           <span class="hero__kicker reveal">// analytics engineer</span>
           <h1 class="hero__title reveal">
-            Victor Mose builds<br />
+            Victor Mose models<br />
             data you can <em>trust</em>,<br />
-            end to end.
+            warehouse to dashboard.
           </h1>
           <p class="hero__lede reveal">
-            I design the pipelines, models, and dashboards that turn raw, messy data
-            into decisions people can act on — from ingestion to insight.
+            I build the transformation layer between raw warehouse tables and
+            the metrics people actually rely on , modeling, testing, and
+            documenting data so the numbers hold up under scrutiny.
           </p>
           <div class="hero__cta reveal">
             <a href="#projects" class="btn btn--primary">See the work</a>
             <a href="#contact" class="btn btn--ghost">Get in touch</a>
           </div>
           <div class="hero__meta reveal">
-            <span><strong>Focus&nbsp;</strong>Data · ML · Web</span>
+            <span><strong>Focus&nbsp;</strong>dbt · SQL · Data Modeling</span>
             <span><strong>Status&nbsp;</strong>Open to opportunities</span>
           </div>
         </div>
@@ -74,29 +75,29 @@
             <path class="flow-line" d="M 60 92 V 408" />
             <path class="flow-dash" d="M 60 92 V 408" />
 
-            <!-- node: ingest -->
+            <!-- node: staging -->
             <circle class="node-ring" cx="60" cy="70" r="22" />
             <circle class="node-dot" cx="60" cy="70" r="5" />
-            <text x="100" y="66" class="node-label">INGEST</text>
-            <text x="100" y="84" font-size="10">raw sources</text>
+            <text x="100" y="66" class="node-label">STAGING</text>
+            <text x="100" y="84" font-size="10">raw source tables</text>
 
-            <!-- node: transform -->
+            <!-- node: modeling -->
             <circle class="node-ring" cx="60" cy="190" r="22" />
             <circle class="node-dot" cx="60" cy="190" r="5" />
-            <text x="100" y="186" class="node-label">TRANSFORM</text>
-            <text x="100" y="204" font-size="10">dbt · SQL</text>
+            <text x="100" y="186" class="node-label">MODELING</text>
+            <text x="100" y="204" font-size="10">dbt · marts</text>
 
-            <!-- node: model -->
+            <!-- node: testing -->
             <circle class="node-ring" cx="60" cy="310" r="22" />
             <circle class="node-dot amber" cx="60" cy="310" r="5" />
-            <text x="100" y="306" class="node-label">MODEL</text>
-            <text x="100" y="324" font-size="10">ML · stats</text>
+            <text x="100" y="306" class="node-label">TESTING</text>
+            <text x="100" y="324" font-size="10">CI · data tests</text>
 
-            <!-- node: insight -->
+            <!-- node: serving -->
             <circle class="node-ring" cx="60" cy="430" r="22" />
             <circle class="node-dot amber" cx="60" cy="430" r="5" />
-            <text x="100" y="426" class="node-label">INSIGHT</text>
-            <text x="100" y="444" font-size="10">dashboards</text>
+            <text x="100" y="426" class="node-label">SERVING</text>
+            <text x="100" y="444" font-size="10">semantic layer</text>
           </svg>
         </div>
       </div>
@@ -108,7 +109,7 @@
         <div class="section-head reveal">
           <div>
             <span class="eyebrow">About</span>
-            <h2 class="section-title">Who's behind the pipelines</h2>
+            <h2 class="section-title">Who's behind the models</h2>
           </div>
           <span class="section-index">§ 01</span>
         </div>
@@ -120,17 +121,18 @@
 
           <div class="about__text reveal">
             <p>
-              I believe data can unlock the potential for positive change in the world.
-              With a passion for statistics and a knack for interpreting complex
-              insights, I'm dedicated to using analytics to drive
-              <strong>better decision-making</strong> and turn information into
-              something people can act on.
+              I believe trustworthy data unlocks better decisions. Analytics
+              engineering is where that trust gets built, modeling raw
+              tables into datasets that are <strong>clean, tested, and
+              documented</strong> enough for the rest of the business to rely
+              on without double-checking.
             </p>
             <p>
-              My work sits at the intersection of <strong>data engineering</strong>,
-              <strong>machine learning</strong>, and <strong>product</strong> —
-              building the systems that move data, the models that make sense of it,
-              and the interfaces that put it in front of the people who need it.
+              My work lives in the warehouse: writing the transformation
+              logic between raw sources and BI-ready tables, defining metrics
+              once so they don't drift between dashboards, and making sure a
+              broken model fails a test in CI, not a stakeholder's trust in
+              the numbers.
             </p>
 
             <div class="field-list">
@@ -141,10 +143,10 @@
               <div class="field-list__row">
                 <span class="field-list__key">stack</span>
                 <span class="field-list__value">
-                  <span class="tag">SaaS</span>
-                  <span class="tag">Data Science</span>
-                  <span class="tag">Machine Learning</span>
-                  <span class="tag">Web Development</span>
+                  <span class="tag">dbt</span>
+                  <span class="tag">SQL</span>
+                  <span class="tag">Data Modeling</span>
+                  <span class="tag">Semantic Layer</span>
                 </span>
               </div>
             </div>
@@ -176,16 +178,17 @@
           <article class="record reveal">
             <div class="record__text">
               <span class="record__index">row 01</span>
-              <h3 class="record__title">Pipeline Engineering</h3>
+              <h3 class="record__title">Transformation Pipelines</h3>
               <div class="record__tags">
-                <span class="tag">ETL</span>
+                <span class="tag">dbt</span>
                 <span class="tag">Data Modeling</span>
-                <span class="tag">Looker Studio</span>
+                <span class="tag">Orchestration</span>
               </div>
               <p class="record__desc">
-                Designing, building, and maintaining scalable data pipelines that
-                collect, process, and store data from multiple sources — with data
-                models structured to support real analytical needs.
+                Modeling raw source tables into clean, tested marts and
+                orchestrating the jobs that keep them fresh, built with an
+                eye for documentation and testing, not just getting numbers
+                to load.
               </p>
               <div class="record__links">
                 <a
@@ -209,16 +212,16 @@
           <article class="record reveal">
             <div class="record__text">
               <span class="record__index">row 02</span>
-              <h3 class="record__title">Machine Learning</h3>
+              <h3 class="record__title">Metrics & Modeling</h3>
               <div class="record__tags">
                 <span class="tag">Statistics</span>
-                <span class="tag">Modeling</span>
+                <span class="tag">Data Modeling</span>
                 <span class="tag">Tableau</span>
               </div>
               <p class="record__desc">
-                Bringing together statistics and machine processing to solve problems
-                at scale — applying new techniques to uncover insight quality couldn't
-                reach through spreadsheets alone.
+                Turning statistical analysis into a metric people can explore
+                themselves, from raw comparison data to a published,
+                self-serve workbook stakeholders actually open.
               </p>
               <div class="record__links">
                 <a
@@ -242,16 +245,16 @@
           <article class="record reveal">
             <div class="record__text">
               <span class="record__index">row 03</span>
-              <h3 class="record__title">Web Development</h3>
+              <h3 class="record__title">Data Tooling</h3>
               <div class="record__tags">
                 <span class="tag">React</span>
                 <span class="tag">D3.js</span>
-                <span class="tag">A/B Testing</span>
+                <span class="tag">Internal Tools</span>
               </div>
               <p class="record__desc">
-                Guiding development teams toward better product intelligence through
-                A/B testing and prototyping — and building front-end dashboards with
-                React and D3.js.
+                Building the front-end layer analytics teams don't always get
+                to own: lightweight internal tools and visualizations,
+                validated with A/B testing instead of guesswork.
               </p>
               <div class="record__links">
                 <a
@@ -282,8 +285,9 @@
             <span class="eyebrow">Contact</span>
             <h2 class="contact__title">Let's talk data.</h2>
             <p class="contact__text">
-              Have a pipeline to build, a model to ship, or just want to talk shop?
-              My inbox and LinkedIn are both open.
+              Have a data model to untangle, a metric that needs a single
+              source of truth, or just want to talk shop? My inbox and
+              LinkedIn are both open.
             </p>
           </div>
           <div class="contact__actions">
